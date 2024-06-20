@@ -3,6 +3,7 @@ import { galleryItems } from "./gallery-items.js";
 
 const galleryEl = document.querySelector(".gallery");
 
+// pentru galerie 
 galleryItems.forEach((item) => {
   const listItem = document.createElement("li");
   listItem.classList.add("gallery__item");
@@ -17,6 +18,7 @@ galleryItems.forEach((item) => {
   galleryEl.append(listItem);
 });
 
+// pty tasta escape
 const escapeButton = (event, imageGallery) => {
   if (event.key === "Escape") {
     imageGallery.close();
@@ -31,12 +33,15 @@ galleryEl.addEventListener("click", (event) => {
     return;
   }
 
+  // basicLightbox
   const imageGallery = basicLightbox.create(
     `<img src="${clickedOn.dataset.source}">`
   );
   imageGallery.show();
 
+// pt funct de keydown
   const onKeydown = (e) => escapeButton(e, imageGallery);
+  // event listener pt Escape sa inchida lightboxul
   document.addEventListener("keydown", onKeydown);
 });
 
