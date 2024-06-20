@@ -3,16 +3,42 @@ import { galleryItems } from "./gallery-items.js";
 
 const galleryEl = document.querySelector(".gallery");
 
-const allGalleryEl = galleryItems.map();
+galleryItems.forEach((item) => {
+  const listItem = document.createElement("li");
+  listItem.classList.add("gallery__item");
+  listItem.innerHTML = `<a class="gallery__link" href="${item.original}">
+  <img 
+      class="gallery__image"
+        src="${item.preview}"
+        data-source="${item.original}"
+        alt="${item.description}"/>
+    </a>
+  `;
+  galleryEl.append(listItem);
+});
 
-const imageGallery = basicLightbox.create(
-  `<img src="${event.target.dataset.source}">`
-);
-imageGallery.show();
+const escapeButton = (event, imageGallery) => {
+  if (event.key === "Escape") {
+    imageGallery.close();
+    document.removeEventListener("keydown", onKeydown);
+  }
+};
 
-const onKeydown = (e) => escapePress(e, imageGallery);
+galleryEl.addEventListener("click", (event) => {
+  event.preventDefault();
+  const clickedOn = event.target;
+  if (clickedOn.nodeName !== "IMG") {
+    return;
+  }
 
-document.addEventListener("keydown", onKeydown);
+  const imageGallery = basicLightbox.create(
+    `<img src="${clickedOn.dataset.source}">`
+  );
+  imageGallery.show();
+
+  const onKeydown = (e) => escapeButton(e, imageGallery);
+  document.addEventListener("keydown", onKeydown);
+});
 
 // =========================DRAFT======================================
 // const instance = basicLightbox.create(`
