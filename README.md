@@ -39,7 +39,6 @@ This project involves creating and rendering a gallery markup based on data from
 
 ## Exercise 1 - basicLightbox Library
 
-Exercise 1 - Image Gallery
 Create a gallery with the ability to click on its elements and view the image at full size in a modal window. Complete this task in files 01-gallery.html and 01-gallery.js. Divide it into several subtasks:
 
 1. Creating and rendering markup based on data from the galleryItems array and the provided article template from the gallery.
@@ -47,7 +46,8 @@ Create a gallery with the ability to click on its elements and view the image at
 3. Connecting the script and styles from the basicLightbox modal window library. Use the CDN service jsdelivr and add links to the project for the minified (.min) files of the library used.
 4. Opening a modal window by clicking on an element of the gallery. Refer to the documentation and existing examples for implementation.
 5. Replacing the src attribute value of the <img> element in the modal window before opening. Utilize the existing markup for the modal window from the examples of the basicLightbox library.
-1. **Modify Gallery Item Appearance**:
+   
+ **Modify Gallery Item Appearance**:
    - Adjust the appearance of the gallery card using the provided template.
      
  ```
@@ -63,7 +63,9 @@ Create a gallery with the ability to click on its elements and view the image at
    </li>
    ```
 
-2. **Reuse Code from Exercise 1**:
+## Exercise 2 - SimpleLightbox Library
+
+1. **Reuse Code from Exercise 1**:
    - Reuse the code written in the first exercise to create and render the gallery markup based on the `galleryItems` data array.
    - Modify the appearance of the gallery card slightly using this template:
      
@@ -75,14 +77,14 @@ Create a gallery with the ability to click on its elements and view the image at
 </li>
 ```
 
-3. **Integrate SimpleLightbox Library**:
+2. **Integrate SimpleLightbox Library**:
    - Connect the script and styles from the SimpleLightbox library.
    - Use the CDN service `cdnjs` to add the files `simple-lightbox.min.js` and `simple-lightbox.min.css` to the project.
 
-4. **Initialize SimpleLightbox**:
+3. **Initialize SimpleLightbox**:
    - Initialize the SimpleLightbox library after creating and adding gallery elements to the `ul.gallery`.
    - Refer to the SimpleLightbox documentation, specifically the "Usage" and "Markup" sections, for implementation details.
 
-5. **Add Alt Text with Options**:
+4. **Add Alt Text with Options**:
    - Refer to the "Options" section in the documentation to add descriptive text to the `alt` attribute of the image.
    - Position the alternative text at the bottom and ensure it appears 250 milliseconds after the image opens.
