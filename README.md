@@ -26,11 +26,32 @@ This project involves creating and rendering a gallery markup based on data from
    - Store the link to the original image in the `data-source` attribute of the `<img>` element and specify it in the `href` attribute.
    - Do not add any additional HTML tags or CSS classes other than those in the provided template.
 
+7. **Disable Default Link Behavior**:
+   - Ensure that clicking on the image wrapped in a link does not redirect the user to another page by default.
+
+8. **Close Modal with Escape Key**:
+   - Although not required for submission, implement functionality to close the modal window when the Escape key is pressed.
+   - Ensure this occurs only when the modal window is open.
+   - Utilize the method provided by the basicLightbox library to programmatically close the modal window.
+
 ## 🛠 Tools 
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,)](https://skillicons.dev)
 
-   ```html
-   <li class="gallery__item">
+## Exercise 1 - basicLightbox Library
+
+Exercise 1 - Image Gallery
+Create a gallery with the ability to click on its elements and view the image at full size in a modal window. Complete this task in files 01-gallery.html and 01-gallery.js. Divide it into several subtasks:
+
+1. Creating and rendering markup based on data from the galleryItems array and the provided article template from the gallery.
+2. Delegating to ul.gallery and obtaining the URL of the full-size image.
+3. Connecting the script and styles from the basicLightbox modal window library. Use the CDN service jsdelivr and add links to the project for the minified (.min) files of the library used.
+4. Opening a modal window by clicking on an element of the gallery. Refer to the documentation and existing examples for implementation.
+5. Replacing the src attribute value of the <img> element in the modal window before opening. Utilize the existing markup for the modal window from the examples of the basicLightbox library.
+1. **Modify Gallery Item Appearance**:
+   - Adjust the appearance of the gallery card using the provided template.
+     
+ ```
+<li class="gallery__item">
      <a class="gallery__link" href="large-image.jpg">
        <img
          class="gallery__image"
@@ -42,29 +63,17 @@ This project involves creating and rendering a gallery markup based on data from
    </li>
    ```
 
-7. **Disable Default Link Behavior**:
-   - Ensure that clicking on the image wrapped in a link does not redirect the user to another page by default.
-
-8. **Close Modal with Escape Key**:
-   - Although not required for submission, implement functionality to close the modal window when the Escape key is pressed.
-   - Ensure this occurs only when the modal window is open.
-   - Utilize the method provided by the basicLightbox library to programmatically close the modal window.
-
-## Exercise 2 - SimpleLightbox Library
-
-1. **Modify Gallery Item Appearance**:
-   - Adjust the appearance of the gallery card using the provided template.
-
-   ```html
-   <li class="gallery__item">
-     <a class="gallery__link" href="large-image.jpg">
-       <img class="gallery__image" src="small-image.jpg" alt="Image description" />
-     </a>
-   </li>
-   ```
-
 2. **Reuse Code from Exercise 1**:
    - Reuse the code written in the first exercise to create and render the gallery markup based on the `galleryItems` data array.
+   - Modify the appearance of the gallery card slightly using this template:
+     
+```
+  <li class="gallery__item">
+   <a class="gallery__link" href="large-image.jpg">
+      <img class="gallery__image" src="small-image.jpg" alt="Image description" />
+   </a>
+</li>
+```
 
 3. **Integrate SimpleLightbox Library**:
    - Connect the script and styles from the SimpleLightbox library.
