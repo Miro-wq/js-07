@@ -26,6 +26,9 @@ This project involves creating and rendering a gallery markup based on data from
    - Store the link to the original image in the `data-source` attribute of the `<img>` element and specify it in the `href` attribute.
    - Do not add any additional HTML tags or CSS classes other than those in the provided template.
 
+## 🛠 Tools 
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,)](https://skillicons.dev)
+
    ```html
    <li class="gallery__item">
      <a class="gallery__link" href="large-image.jpg">
