@@ -1,43 +1,47 @@
-# Gallery Project README
+# ✨ Gallery Project ✨
 
-## Description
+## 🛠 Tools used
 
-This project involves creating and rendering a gallery markup based on data from the `galleryItems` array and a provided gallery item template. The key features and tasks implemented in this project are as follows:
-
-1. **Create and Render Gallery Markup**: 
-   - Utilize the `galleryItems` data array and provided gallery item template to generate and render gallery items.
-
-2. **Delegate Events to Gallery**:
-   - Delegate events to the `ul.gallery` element to handle click events and retrieve the URL of the large image.
-
-3. **Integrate basicLightbox Library**:
-   - Connect the script and styles from the basicLightbox modal window library.
-   - Use the CDN service `jsdelivr` to add the minimized files (.min) from the basicLightbox library to the project.
-
-4. **Open Modal on Gallery Item Click**:
-   - Open a modal window by clicking on a gallery item.
-   - Refer to the basicLightbox documentation and existing examples to implement this functionality.
-
-5. **Update Image Src in Modal**:
-   - Before opening the modal window, replace the value of the `src` attribute of the `<img>` element in the modal with the large image URL.
-   - Use the existing modal markup from the basicLightbox library examples.
-
-6. **Gallery Items Markup**:
-   - Store the link to the original image in the `data-source` attribute of the `<img>` element and specify it in the `href` attribute.
-   - Do not add any additional HTML tags or CSS classes other than those in the provided template.
-
-7. **Disable Default Link Behavior**:
-   - Ensure that clicking on the image wrapped in a link does not redirect the user to another page by default.
-
-8. **Close Modal with Escape Key**:
-   - Although not required for submission, implement functionality to close the modal window when the Escape key is pressed.
-   - Ensure this occurs only when the modal window is open.
-   - Utilize the method provided by the basicLightbox library to programmatically close the modal window.
-
-## 🛠 Tools 
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,)](https://skillicons.dev)
 
-## Exercise 1 - basicLightbox Library
+![Description](https://img.shields.io/badge/Description-purple?style=for-the-badge)
+>
+>This project involves creating and rendering a gallery markup based on data from the `galleryItems` array and a provided gallery item template. The key features and tasks implemented in this project are as follows:
+>
+>1. **Create and Render Gallery Markup**: 
+>   - Utilize the `galleryItems` data array and provided gallery item template to generate and render gallery items.
+>
+>2. **Delegate Events to Gallery**:
+>   - Delegate events to the `ul.gallery` element to handle click events and retrieve the URL of the large image.
+>
+>3. **Integrate basicLightbox Library**:
+>   - Connect the script and styles from the basicLightbox modal window library.
+>   - Use the CDN service `jsdelivr` to add the minimized files (.min) from the basicLightbox library to the project.
+>
+>4. **Open Modal on Gallery Item Click**:
+>   - Open a modal window by clicking on a gallery item.
+>   - Refer to the basicLightbox documentation and existing examples to implement this functionality.
+>
+>5. **Update Image Src in Modal**:
+>   - Before opening the modal window, replace the value of the `src` attribute of the `<img>` element in the modal with the large image URL.
+>   - Use the existing modal markup from the basicLightbox library examples.
+>
+>6. **Gallery Items Markup**:
+>   - Store the link to the original image in the `data-source` attribute of the `<img>` element and specify it in the `href` attribute.
+>   - Do not add any additional HTML tags or CSS classes other than those in the provided template.
+>
+>7. **Disable Default Link Behavior**:
+>   - Ensure that clicking on the image wrapped in a link does not redirect the user to another page by default.
+>
+>8. **Close Modal with Escape Key**:
+>   - Although not required for submission, implement functionality to close the modal window when the Escape key is pressed.
+>   - Ensure this occurs only when the modal window is open.
+>   - Utilize the method provided by the basicLightbox library to programmatically close the modal window.
+>
+
+![Exercise 1 ](https://img.shields.io/badge/Exercise%201-purple?style=for-the-badge)
+> - basicLightbox Library
+>
 
 Create a gallery with the ability to click on its elements and view the image at full size in a modal window. Complete this task in files 01-gallery.html and 01-gallery.js. Divide it into several subtasks:
 
@@ -63,7 +67,9 @@ Create a gallery with the ability to click on its elements and view the image at
    </li>
    ```
 
-## Exercise 2 - SimpleLightbox Library
+![Exercise 2](https://img.shields.io/badge/Exercise%202-purple?style=for-the-badge)
+> - SimpleLightbox Library
+>
 
 1. **Reuse Code from Exercise 1**:
    - Reuse the code written in the first exercise to create and render the gallery markup based on the `galleryItems` data array.
