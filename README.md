@@ -54,7 +54,7 @@ Create a gallery with the ability to click on its elements and view the image at
  **Modify Gallery Item Appearance**:
    - Adjust the appearance of the gallery card using the provided template.
      
- ```
+ ```html
 <li class="gallery__item">
      <a class="gallery__link" href="large-image.jpg">
        <img
@@ -75,7 +75,7 @@ Create a gallery with the ability to click on its elements and view the image at
    - Reuse the code written in the first exercise to create and render the gallery markup based on the `galleryItems` data array.
    - Modify the appearance of the gallery card slightly using this template:
      
-```
+```html
   <li class="gallery__item">
    <a class="gallery__link" href="large-image.jpg">
       <img class="gallery__image" src="small-image.jpg" alt="Image description" />
